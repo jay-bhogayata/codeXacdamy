@@ -5,9 +5,9 @@ const Login = () => {
   return (
     <div className="flex  h-screen lg:flex-row  flex-col w-full">
       <div className="lg:w-1/2  flex w-full h-1/3 lg:h-screen">
-        <img src={loginimg} alt="" className="w-2/3 mx-auto lg:mt-0 mt-10" />
+        <img src={loginimg} alt="" className="w-2/3 mx-auto lg:mt-0 mt-2" />
       </div>
-      <div className="lg:w-1/2 md:w-2/3 mx-auto flex flex-col w-full h-1/2 lg:h-screen  lg:mt-0 mt-12 space-y-10">
+      <div className="lg:w-1/2 md:w-2/3 mx-auto flex flex-col w-full h-1/2 lg:h-screen  lg:mt-0 mt-8 space-y-10">
         <div className="text lg:mt-28 space-y-4  mx-auto  px-10 ">
           <h1 className="text-4xl font-bold  ">Don't think</h1>
           <h1 className="text-4xl font-bold  ">
