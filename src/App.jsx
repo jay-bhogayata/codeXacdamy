@@ -1,12 +1,19 @@
 import './App.css'
-import Login from './pages/Login'
+import Signup from './pages/Signup'
+
+import {Link} from 'react-router-dom'
 
 function App() {
   
 
   return (
     <>
-    <Login/>
+
+    <Link to ="/signup">Signup</Link>
+    <br />
+    <Link to ="/login">Login</Link>
+     
+
     </>
   )
 }
