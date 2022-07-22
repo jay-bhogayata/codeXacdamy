@@ -23,11 +23,7 @@ const Signup = () => {
           </h1>
         </div>
         <div className="lg:mt-28 lg:mx-24 p-4 lg:p-0 space-y-4 flex flex-col sm:p-4 ">
-          <input
-            type="text"
-            className="lg:w-2/3 w-full p-2 text-xl rounded-lg border-2 border-purple-800 outline-none bg-[#0D1117]/80 text-gray-400"
-            placeholder="Name"
-          />
+          
           <input
             type="email"
             className="lg:w-2/3 w-full p-2 text-xl rounded-lg border-2 border-purple-800 outline-none bg-[#0D1117]/80 text-gray-400"
@@ -37,6 +33,11 @@ const Signup = () => {
             type="password"
             className="lg:w-2/3 w-full p-2 text-xl rounded-lg border-2 border-purple-800 outline-none bg-[#0D1117]/80 text-gray-400"
             placeholder="Password"
+          />
+          <input
+            type="password"
+            className="lg:w-2/3 w-full p-2 text-xl rounded-lg border-2 border-purple-800 outline-none bg-[#0D1117]/80 text-gray-400"
+            placeholder="conform Password"
           />
           <button className="lg:w-2/3 w-full bg-purple-600 p-2 rounded-lg text-xl ">
             Sign up
