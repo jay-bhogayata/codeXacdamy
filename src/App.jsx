@@ -1,21 +1,17 @@
-import './App.css'
-import Signup from './pages/Signup'
-
-import {Link} from 'react-router-dom'
+import "./App.css";
+import Signup from "./pages/Signup";
+import Navbar from "./components/Navbar";
+import { Link } from "react-router-dom";
 
 function App() {
-  
-
   return (
     <>
-
-    <Link to ="/signup">Signup</Link>
-    <br />
-    <Link to ="/login">Login</Link>
-     
-
+      <Navbar />
+      <Link to="/signup">Signup</Link>
+      <br />
+      <Link to="/login">Login</Link>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
