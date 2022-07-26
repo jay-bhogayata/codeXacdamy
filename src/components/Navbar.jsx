@@ -6,48 +6,48 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="bg-[#f1f1f1] text-black">
+        <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-6">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0">
-                <h1 className="text-2xl  font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800 ">
+            <div className="flex justify-between w-full">
+              <div className="flex-shrink-0 ">
+                <h1 className="text-2xl  font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800">
                   CodeXAcademy
                 </h1>
               </div>
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
+              <div className="hidden md:block   ">
+                <div className="ml-10 flex items-baseline  space-x-4">
                   <a
                     href="#"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="hover:text-purple-600 px-3 py-2 rounded-md text-md font-medium"
                   >
                     Home
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="hover:text-purple-600 px-3 py-2 rounded-md text-md font-medium"
                   >
                     About
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" hover:text-purple-600 px-3 py-2 rounded-md text-md font-medium"
                   >
                     Learnning paths
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="hover:text-purple-600 px-3 py-2 rounded-md text-md font-medium"
                   >
                     blog
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="hover:text-purple-600 px-3 py-2 rounded-md text-md font-semibold"
                   >
                     Contect us
                   </a>
@@ -115,35 +115,35 @@ function Navbar() {
               <div refs={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
                   href="#"
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Home
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="block px-3 py-2 rounded-md text-base font-medium"
                 >
                   About
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Learnning paths
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="block px-3 py-2 rounded-md text-base font-medium"
                 >
                   blog
                 </a>
 
                 <a
                   href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contect us
                 </a>

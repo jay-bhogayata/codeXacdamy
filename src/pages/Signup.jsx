@@ -2,9 +2,11 @@ import React from "react";
 import loginimg from "../assets/loginimg.svg";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 
+
+
 const Signup = () => {
   return (
-    <div className="flex  h-screen lg:flex-row  flex-col w-full ">
+    <div className="flex  h-screen lg:flex-row  flex-col w-full bg-[#0D1117] text-white">
       <div className="lg:w-1/2  lg:mt-0 mt-2 flex w-full h-1/3 lg:h-screen flex-col justify-around space-y-10 ">
         <h1 className="text-5xl  font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800 mx-auto lg:mt-6 mb-3 p-2">
           CodeXAcademy
