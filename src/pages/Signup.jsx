@@ -6,7 +6,7 @@ import { FaGithub, FaGoogle } from "react-icons/fa";
 
 const Signup = () => {
   return (
-    <div className="flex  h-screen lg:flex-row  flex-col w-full bg-[#0D1117] text-white">
+    <div className="flex  h-screen lg:flex-row  flex-col w-full text-[#1b1b1b]/90 ">
       <div className="lg:w-1/2  lg:mt-0 mt-2 flex w-full h-1/3 lg:h-screen flex-col justify-around space-y-10 ">
         <h1 className="text-5xl  font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800 mx-auto lg:mt-6 mb-3 p-2">
           CodeXAcademy
@@ -28,22 +28,22 @@ const Signup = () => {
           
           <input
             type="email"
-            className="lg:w-2/3 w-full p-2 text-xl rounded-lg border-2 border-purple-800 outline-none bg-[#0D1117]/80 text-gray-400"
+            className="lg:w-2/3 w-full p-2 text-xl rounded-lg border-2 border-purple-800 outline-none  text-[#1b1b1b]/90"
             placeholder="Email"
           />
           <input
             type="password"
-            className="lg:w-2/3 w-full p-2 text-xl rounded-lg border-2 border-purple-800 outline-none bg-[#0D1117]/80 text-gray-400"
+            className="lg:w-2/3 w-full p-2 text-xl rounded-lg border-2 border-purple-800 outline-none  text-[#1b1b1b]/90"
             placeholder="Password"
           />
           <input
             type="password"
-            className="lg:w-2/3 w-full p-2 text-xl rounded-lg border-2 border-purple-800 outline-none bg-[#0D1117]/80 text-gray-400"
+            className="lg:w-2/3 w-full p-2 text-xl rounded-lg border-2 border-purple-800 outline-none  text-[#1b1b1b]/90"
             placeholder="conform Password"
           />
-          <button className="lg:w-2/3 w-full bg-purple-600 p-2 rounded-lg text-xl ">
-            Sign up
-          </button>
+         <button className="bg-[#1b1b1b] text-lg text-gray-300 lg:w-2/3 w-full  p-2 rounded-lg ">
+          Sign up
+        </button>
           <div className="lg:mx-0   mx-auto">
             <p>
               Alrady have an account ?{" "}
@@ -61,14 +61,14 @@ const Signup = () => {
             "
             >
               <FaGoogle className="text-white my-auto" />
-              <p className=""> Sign up with Google</p>
+              <p className="text-gray-100"> Sign up with Google</p>
             </button>
             <button
               className="lg:w-2/3 w-full bg-stone-800  border-[2px] border-gray-50 p-2 rounded-lg text-xl flex justify-around
             "
             >
               <FaGithub className="text-white my-auto" />
-              <p className=""> Sign up with Github</p>
+              <p className="text-gray-100"> Sign up with Github</p>
             </button>
           </div>
         </div>

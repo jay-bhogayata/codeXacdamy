@@ -8,6 +8,7 @@ import microsoft from "../assets/microsoft.svg";
 import zoho from "../assets/zoho.svg";
 import zomato from "../assets/zomato.svg";
 import think from "../assets/think.svg";
+import { Link } from "react-router-dom";
 
 import { BsFillLaptopFill } from "react-icons/bs";
 
@@ -27,9 +28,14 @@ const Home = () => {
             High Quality Course at Affordable prices. We are latest in tech and
             highest in quality.
           </p>
-          <button className="bg-[#1b1b1b] text-lg text-gray-300 p-3 rounded-xl mt-8">
+          <Link to="/signup">
+          <button
+            href={"/signup"}
+            className="bg-[#1b1b1b] text-lg text-gray-300 p-3 rounded-xl mt-8 text-center w-full"
+          >
             Start Learnning Today
           </button>
+          </Link>
         </div>
         <div className="lg:w-1/2 lg:h-1/2 w-full  flex  justify-center p-5 md:p-20 lg:px-36">
           <img src={Laern} alt="" className="lg:w-full " />
@@ -208,23 +214,25 @@ const Home = () => {
             <img src={think} alt="" className="p-3 lg:w-2/3" />
           </div>
           <div className=" p-2 lg:w-1/2">
-          <p className="p-3 my-2 text-3xl  text-[#1b1b1b]/90 font-bold">
+            <p className="p-3 my-2 text-3xl  text-[#1b1b1b]/90 font-bold">
               {" "}
-              Don't think start Learnning tody
+              Don't think start Learnning today
             </p>
-            <p className="p-3 text-xl font-semibold text-gray-600/95 ">
+            <p className="p-3 text-xl font-semibold text-gray-600/95 mb-5">
               {" "}
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
               assumenda reprehenderit perspiciatis rem iusto odit.
             </p>
-            <button className="bg-[#1b1b1b] text-lg text-gray-300 p-3 rounded-xl mt-8 lg:w-1/3 lg:mx-3 ml-3 ">
-              Join Now
-            </button>
+            <Link to="/signup">
+              <button className="bg-[#1b1b1b] text-lg text-gray-300 p-3 rounded-xl  lg:w-1/3 lg:mx-3 ml-3 ">
+                Join Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };
