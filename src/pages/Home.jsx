@@ -29,8 +29,9 @@ const Home = () => {
       </div>
 
       {/* section 2 */}
-      <div className="bg-[#f1f1f1]   flex lg:flex-row flex-col text-black">
-        <div className="lg:h-1/2 w-full flex lg:flex-row flex-col p-5  md:p-20 lg:px-36 lg:space-x-20 space-y-8 justify-center ">
+      <div className="bg-[#f1f1f1]   flex lg:flex-row flex-col text-black p-3">
+        <div className="w-full   lg:mx-32 
+        rounded-3xl mb-10 flex lg:flex-row flex-col lg:space-y-0 space-y-1 ">
           <p className="text-4xl font-bold text-[#1b1b1b] lg:w-1/3 flex my-auto p-5 leading-10 mt-5">
             Our numbers tells more about us
           </p>
@@ -55,7 +56,7 @@ const Home = () => {
       {/* section 3 */}
       <div className="bg-[#f1f1f1] flex lg:flex-row flex-col text-black p-3 ">
         <div
-          className="w-full lg:p-10 p-2 lg:mx-36 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500
+          className="w-full lg:p-6 p-2 lg:mx-32 bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500
         rounded-2xl mb-10 flex lg:space-x-3 flex-col lg:space-y-0 space-y-3 lg:flex-row"
         >
           <div className="bg-pink- lg:w-1/2 w-full lg:p-4">
@@ -111,6 +112,39 @@ const Home = () => {
               </p>
             </div>
             
+          </div>
+        </div>
+      </div>
+
+      {/* section 4 */}
+      <div className="bg-[#f1f1f1] flex lg:flex-row flex-col text-black p-3">
+        <div className="w-full  p-4 lg:mx-32 
+        rounded-3xl mb-10 flex  flex-col lg:space-y-0 space-y-3 ">
+          <p className="text-3xl font-bold text-[#1b1b1b]/90 mb-10">We'll help you learn what you like</p>
+          <div className=" flex   lg:space-x-10 lg:flex-row flex-col lg:space-y-0 space-y-8">
+          <div className=" lg:w-2/5 space-y-2 ">
+            <span className="text-4xl font-bold text-blue-400">01</span>
+            <p className="text-2xl font-bold text-[#1b1b1b]/90">Learn at your own pace</p>
+            <p className="text-md font-semibold text-gray-600/95">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quod eum culpa dicta laboriosam. Adipisci 
+            </p>
+          </div>
+          <div className="lg:w-2/5 space-y-2 ">
+            <span className="text-4xl font-bold text-blue-400">02</span>
+            <p className="text-2xl font-bold text-[#1b1b1b]/90">Learn from industry experts</p>
+            <p className="text-md font-semibold text-gray-600/95">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quod eum culpa dicta laboriosam. Adipisci 
+            </p>
+          </div>
+         
+          <div className="lg:w-2/5 space-y-2 ">
+            <span className="text-4xl font-bold text-blue-400">03</span>
+            <p className="text-2xl font-bold text-[#1b1b1b]/90">Large course library</p>
+            <p className="text-md font-semibold text-gray-600/95">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio quod eum culpa dicta laboriosam. Adipisci 
+            </p>
+          </div>
+         
           </div>
         </div>
       </div>
