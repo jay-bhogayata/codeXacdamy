@@ -1,6 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Laern from "../assets/Learn.svg";
+import google from "../assets/google.svg";
+import aws from "../assets/aws.svg";
+import microsoft from "../assets/microsoft.svg";
+import zoho from "../assets/zoho.svg";
+import zomato from "../assets/zomato.svg";
+
 import { BsFillLaptopFill } from "react-icons/bs";
 
 const Home = () => {
@@ -148,6 +154,25 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* section 5 */}
+      <div className="bg-[#f1f1f1] flex flex-col text-black p-3">
+        
+        <p className="lg:mx-36 text-3xl text-[#1b1b1b]/90 font-bold">Our student's work at</p>
+        <div className="flex lg:flex-row flex-wrap lg:mx-32 lg:mt-14   lg:space-y-0 mt-10 ">
+        <img src={google} alt="" className="lg:w-1/4 w-2/5 mx-auto lg:px-10 p-2"/>
+        <img src={microsoft} alt="" className="lg:w-1/4 w-2/5 mx-auto lg:px-10 p-2"/>
+        
+        <img src={zomato} alt="" className="lg:w-1/4 w-2/5 mx-auto lg:px-10 p-2"/>
+        <img src={zoho} alt="" className="lg:w-1/4 w-2/5 mx-auto lg:px-10 p-2"/>
+        </div>
+      </div>
+
+      {/* section 6 */}
+      <div className="bg-[#f1f1f1] flex flex-col text-black p-3">
+
+      </div>
+
     </div>
   );
 };
