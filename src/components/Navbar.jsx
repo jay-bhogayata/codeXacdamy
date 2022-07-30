@@ -51,6 +51,12 @@ function Navbar() {
                   >
                     Contect us
                   </a>
+                  <a
+                    href="/login"
+                    className="text-gray-300 bg-[#1b1b1b] px-3 py-2 rounded-md text-md font-semibold"
+                  >
+                    Login
+                  </a>
                 </div>
               </div>
             </div>
@@ -147,6 +153,13 @@ function Navbar() {
                 >
                   Contect us
                 </a>
+                <a
+                  href="/login"
+                  className="block px-3 bg-[#1b1b1b] text-center text-gray-200 py-2 rounded-md text-base font-medium"
+                >
+                  Login
+                </a>
+               
               </div>
             </div>
           )}

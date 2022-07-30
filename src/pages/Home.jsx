@@ -15,6 +15,7 @@ import { BsFillLaptopFill } from "react-icons/bs";
 const Home = () => {
   return (
     <div>
+      
       {/* navbar */}
       <Navbar />
 
@@ -29,12 +30,12 @@ const Home = () => {
             highest in quality.
           </p>
           <Link to="/signup">
-          <button
-            href={"/signup"}
-            className="bg-[#1b1b1b] text-lg text-gray-300 p-3 rounded-xl mt-8 text-center w-full"
-          >
-            Start Learnning Today
-          </button>
+            <button
+              href={"/signup"}
+              className="bg-[#1b1b1b] text-lg text-gray-300 p-3 rounded-xl mt-8 text-center w-full"
+            >
+              Start Learnning Today
+            </button>
           </Link>
         </div>
         <div className="lg:w-1/2 lg:h-1/2 w-full  flex  justify-center p-5 md:p-20 lg:px-36">
