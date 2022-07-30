@@ -32,10 +32,10 @@ export default function ForgotPassword() {
         <h1 className="text-3xl font-semibold text-center mt-5 font-[#1b1b1b]">Password Reset</h1>
         {error && <p className="text-xl mx-auto mt-2 font-medium text-red-700">{error}</p>}
         {message && <p className="text-xl mx-auto mt-2 font-medium text-green-700" >{message}</p>}
-        <form onSubmit={handleSubmit} className="mx-auto mt-5 w-1/2 flex flex-col">
+        <form onSubmit={handleSubmit} className="mx-auto mt-5 lg:w-1/2 w-full p-2 flex flex-col">
           
-          <input type="email" ref={emailRef} required className="p-2  mt-2 rounded-lg bg-stone-50 w-1/2 mx-auto text-[#1b1b1b]/90" placeholder="email"/>
-          <button disabled={loading} className="bg-[#1b1b1b] w-1/2 mx-auto mt-5 p-2 text-gray-300 rounded-lg" type="submit">
+          <input type="email" ref={emailRef} required className="p-2  mt-2 rounded-lg bg-stone-50 lg:w-1/2 w-full mx-auto text-[#1b1b1b]/90" placeholder="email"/>
+          <button disabled={loading} className="bg-[#1b1b1b] lg:w-1/2 w-full mx-auto mt-5 p-2 text-gray-300 rounded-lg" type="submit">
               Reset Password
             </button>
         </form>

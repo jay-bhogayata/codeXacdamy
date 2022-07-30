@@ -13,7 +13,7 @@ const Signup = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  console.log(import.meta.env.VITE_FIREBASE_STORAGEBUCKET)
+  
 
   const handleSubmit = async (e) => {
     console.log(passwordConfirmRef.current.value);
