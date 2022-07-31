@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import loginimg from "../assets/loginimg.svg";
 import { FaGithub, FaGoogle } from "react-icons/fa";
 import { useAuth } from "../context/AuthContext";
@@ -8,23 +8,20 @@ const Login = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
 
-  const { login, currentUser, signupwithGoogle, signupwithGithub } = useAuth();
+  const { login, signupwithGoogle, signupwithGithub } = useAuth();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // if (passwordRef.current.value = passwordConfirmRef.current.value) {
-    //   return setError("password do not match");
-    // }
+
     try {
       setError("");
       setLoading(true);
 
       await login(emailRef.current.value, passwordRef.current.value);
       navigate("/Dashboard");
-      console.log("HEllo");
     } catch (error) {
       setError("faild login");
       console.log(error);
@@ -72,7 +69,7 @@ const Login = () => {
           className="lg:w-2/3 w-1/2 h-1/2 mx-auto lg:mt-0 "
         />
       </div>
-      <div className="lg:w-1/2 md:w-2/3 mx-auto flex flex-col w-full h-1/2 lg:h-screen  lg:mt-0 mt-8 space-y-10 ">
+      <div className="lg:w-1/2 md:w-2/3 mx-auto flex flex-col w-full h-1/2 lg:h-screen  lg:mt-0 mt-8 space-y-18 ">
         <div className="text lg:mt-24   flex  lg:px-10 bg-pink-2">
           <h1 className="text-4xl font-bold ml-14 text-[#1b1b1b]/90">
             Welcome back champ
@@ -118,7 +115,7 @@ const Login = () => {
           </p>
           <div className="space-y-6">
             <button
-            onClick={handleGoogleSignup}
+              onClick={handleGoogleSignup}
               className="lg:w-2/3 w-full bg-red-700  border-[2px] border-gray-50 p-2 rounded-lg text-xl flex justify-around
             "
             >
@@ -126,7 +123,7 @@ const Login = () => {
               <p className="text-gray-100"> Sign in with Google</p>
             </button>
             <button
-            onClick={handleGithubSignup}
+              onClick={handleGithubSignup}
               className="lg:w-2/3 w-full bg-stone-800  border-[2px] border-gray-50 p-2 rounded-lg text-xl flex justify-around
           "
             >

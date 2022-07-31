@@ -1,11 +1,13 @@
+// react import
 import React, { useContext, useState, useEffect } from "react";
-import { auth } from "../firebase";
-import { getAuth, signInWithPopup, GoogleAuthProvider , GithubAuthProvider} from "firebase/auth";
+
+// firebase config imports
+import { auth } from "../config/firebase";
+import { GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
 
 const AuthContext = React.createContext();
 
 const provider = new GoogleAuthProvider();
-
 const GithubProvider = new GithubAuthProvider();
 
 export function AuthProvider({ children }) {
@@ -20,15 +22,14 @@ export function AuthProvider({ children }) {
   }
   function resetPassword(email) {
     return auth.sendPasswordResetEmail(email);
-    return alert("Hello world");
   }
 
   function signupwithGoogle() {
-    return auth.signInWithPopup(provider)
+    return auth.signInWithPopup(provider);
   }
 
   function signupwithGithub() {
-    return auth.signInWithPopup(GithubProvider)
+    return auth.signInWithPopup(GithubProvider);
   }
 
   function logout() {
@@ -50,7 +51,7 @@ export function AuthProvider({ children }) {
     logout,
     resetPassword,
     signupwithGoogle,
-    signupwithGithub
+    signupwithGithub,
   };
 
   return (

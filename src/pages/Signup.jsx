@@ -8,28 +8,24 @@ const Signup = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
-  const { signup, signupwithGoogle ,signupwithGithub } = useAuth();
+  const { signup, signupwithGoogle, signupwithGithub } = useAuth();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const navigate = useNavigate();
-
-  
+  const message = "password dos't match";
 
   const handleSubmit = async (e) => {
-    console.log(passwordConfirmRef.current.value);
-    console.log(passwordRef.current.value);
-
     e.preventDefault();
-    // if (passwordRef.current.value = passwordConfirmRef.current.value) {
-    //   return setError("password do not match");
-    // }
+    if (!(passwordRef.current.value === passwordConfirmRef.current.value)) {
+      return [setError("password do not match"), alert(message)];
+    }
     try {
       setError("");
       setLoading(true);
-
       await signup(emailRef.current.value, passwordRef.current.value);
       navigate("/Dashboard");
-    } catch {
+    }catch 
+    {
       setError("faild to create an account");
     }
     setLoading(false);
@@ -40,7 +36,7 @@ const Signup = () => {
     try {
       setError("");
       setLoading(true);
-      await signupwithGoogle()
+      await signupwithGoogle();
       navigate("/Dashboard");
     } catch {
       setError("faild to create an account");
@@ -54,7 +50,7 @@ const Signup = () => {
     try {
       setError("");
       setLoading(true);
-      await signupwithGithub()
+      await signupwithGithub();
       navigate("/Dashboard");
     } catch {
       setError("faild to create an account");
@@ -74,7 +70,7 @@ const Signup = () => {
           className="lg:w-2/3 w-1/2 h-1/2 mx-auto lg:mt-0 "
         />
       </div>
-      <div className="lg:w-1/2 md:w-2/3 mx-auto flex flex-col w-full h-1/2 lg:h-screen  lg:mt-0 mt-8 space-y-10 ">
+      <div className="lg:w-1/2 md:w-2/3 mx-auto flex flex-col w-full h-1/2 lg:h-screen  lg:mt-0 mt-8 space-y-6 ">
         <div className="text lg:mt-24 space-y-4  mx-auto  px-10 ">
           <h1 className="text-4xl font-bold  ">Don't think</h1>
           <h1 className="text-4xl font-bold  ">
@@ -125,7 +121,7 @@ const Signup = () => {
           <p className="lg:w-2/3 w-full  p-2 rounded-lg text-xl flex">
             <span className="mx-auto">or</span>
           </p>
-          <div className="space-y-6">
+          <div className="space-y-4">
             <button
               onClick={handleGoogleSignup}
               className="lg:w-2/3 w-full bg-red-700  border-[2px] border-gray-50 p-2 rounded-lg text-xl flex justify-around

@@ -8,7 +8,7 @@ const Footer = () => {
           <h1 className="text-2xl mb-5 font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800">
             CodeXAcademy
           </h1>
-          <p className="text-xl font-bold text-gray-800/95">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p className="text-xl font-bold text-gray-800/95">codexacademy- Quality content at affordable pricing.</p>
           <p className="text-md font-medium text-gray-800/95">copyright &copy; codeXacademy All rights reserved</p>
         </div>
         <div className="grid lg:grid-cols-4  mt-5 p-3 ">

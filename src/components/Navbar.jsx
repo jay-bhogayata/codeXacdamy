@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
-const refs = React.createRef();
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +52,7 @@ function Navbar() {
                   </a>
                   <a
                     href="/login"
-                    className="text-gray-300 bg-[#1b1b1b] px-3 py-2 rounded-md text-md font-semibold"
+                    className="text-gray-300 bg-[#1b1b1b] px-3 py-2 rounded-md text-md font-semibold hover:text-purple-600"
                   >
                     Login
                   </a>
@@ -159,7 +158,6 @@ function Navbar() {
                 >
                   Login
                 </a>
-               
               </div>
             </div>
           )}

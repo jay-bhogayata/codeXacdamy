@@ -1,16 +1,24 @@
+// react imports
 import React from "react";
+
+//components
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
+//imges
 import Laern from "../assets/Learn.svg";
 import google from "../assets/google.svg";
-import aws from "../assets/aws.svg";
 import microsoft from "../assets/microsoft.svg";
 import zoho from "../assets/zoho.svg";
 import zomato from "../assets/zomato.svg";
 import think from "../assets/think.svg";
+
+//icons 
+import { BsFillLaptopFill } from "react-icons/bs";
+
+// recat router
 import { Link } from "react-router-dom";
 
-import { BsFillLaptopFill } from "react-icons/bs";
 
 const Home = () => {
   return (
