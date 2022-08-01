@@ -1,8 +1,28 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import { useAuth } from "../context/AuthContext";
+import { Link, useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { currentUser, logout } = useAuth();
+  const [error, setError] = useState("");
+
+  const navigate = useNavigate();
+
+  console.log(currentUser);
+
+  const handleLogout = async () => {
+    setError("");
+    try {
+      await logout();
+      navigate("/");
+    } catch (error) {
+      setError("faild to logout");
+      console.log(error);
+    }
+  };
+
   return (
     <div>
       <nav className="bg-[#f1f1f1] text-black">
@@ -50,12 +70,22 @@ function Navbar() {
                   >
                     Contect us
                   </a>
-                  <a
-                    href="/login"
-                    className="text-gray-300 bg-[#1b1b1b] px-3 py-2 rounded-md text-md font-semibold hover:text-purple-600"
-                  >
-                    Login
-                  </a>
+                  {currentUser !== null ? (
+                    <a
+                      onClick={handleLogout}
+
+                      className= "cursor-pointer text-gray-300 bg-[#1b1b1b] px-3 py-2 rounded-md text-md font-semibold hover:text-purple-600"
+                    >
+                      Logout
+                    </a>
+                  ) : (
+                    <a
+                      href="/login"
+                      className="text-gray-300 bg-[#1b1b1b] px-3 py-2 rounded-md text-md font-semibold hover:text-purple-600"
+                    >
+                      Login
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -152,12 +182,23 @@ function Navbar() {
                 >
                   Contect us
                 </a>
-                <a
-                  href="/login"
-                  className="block px-3 bg-[#1b1b1b] text-center text-gray-200 py-2 rounded-md text-base font-medium"
-                >
-                  Login
-                </a>
+                
+                {currentUser !== null ? (
+                    <a
+                      onClick={handleLogout}
+
+                      className= "cursor-pointer block px-3 bg-[#1b1b1b] text-center text-gray-200 py-2 rounded-md text-base font-medium"
+                    >
+                      Logout
+                    </a>
+                  ) : (
+                    <a
+                      href="/login"
+                      className="block px-3 bg-[#1b1b1b] text-center text-gray-200 py-2 rounded-md text-base font-medium"
+                    >
+                      Login
+                    </a>
+                  )}
               </div>
             </div>
           )}

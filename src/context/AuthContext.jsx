@@ -5,6 +5,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { auth } from "../config/firebase";
 import { GoogleAuthProvider, GithubAuthProvider } from "firebase/auth";
 
+
 const AuthContext = React.createContext();
 
 const provider = new GoogleAuthProvider();
@@ -13,7 +14,8 @@ const GithubProvider = new GithubAuthProvider();
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState();
   const [loading, setLoading] = useState(true);
-
+  
+  
   function signup(email, password) {
     return auth.createUserWithEmailAndPassword(email, password);
   }
