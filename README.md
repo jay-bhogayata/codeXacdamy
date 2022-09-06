@@ -1,3 +1,0 @@
-# codeXacdamy
-
-add ci cd
