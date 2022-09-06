@@ -2,9 +2,9 @@ version: 2.1
 executors:
   docker-publisher:
     environment:
-      IMAGE_NAME: codexacdamy
+      IMAGE_NAME: bhogayatajay/codexacdamy
     docker:
-      - image: codexacdamy
+      - image: bhogayatajay/codexacdamy
 jobs:
   build:
     executor: docker-publisher
@@ -43,10 +43,10 @@ workflows:
       - build:
           filters:
             branches:
-              only: main
+              only: circleci-project-setup
       - publish-latest:
           requires:
             - build
           filters:
             branches:
-              only: main
+              only: circleci-project-setup
