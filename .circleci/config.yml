@@ -2,9 +2,9 @@ version: 2.1
 executors:
   docker-publisher:
     environment:
-      IMAGE_NAME: codeXacdamy
+      IMAGE_NAME: codexacdamy
     docker:
-      - image: codeXacdamy
+      - image: codexacdamy
 jobs:
   build:
     executor: docker-publisher
